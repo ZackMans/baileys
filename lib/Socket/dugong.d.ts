@@ -1,7 +1,7 @@
 // dugong.d.ts
 import { proto } from '../../WAProto';
 
-declare namespace kikyy {
+declare namespace zckmns {
     interface MediaUploadOptions {
         fileEncSha256?: Buffer;
         mediaType?: string;
@@ -216,4 +216,4 @@ declare class kikyy {
     ): Promise<any>;
 }
 
-export = kikyy;
+export = zckmns;
