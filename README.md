@@ -33,6 +33,22 @@ Begin by installing the library via your preferred package manager, then follow 
 
 ## SendMessage Documentation
 
+### WithTag Message
+Send message with all numbers can be tagged automatically
+```javascript
+await sock.sendMessage(jid, {
+    text: "hai @62822xxx, @628124xx, and @628567xxx", withTag: true
+}, { quoted: m })
+```
+
+### Custom Message ID
+send message with custom id
+```javascript
+await sock.sendMessage(jid, {
+    text: "ini pesan dari zackmans"
+}, { quoted: m, msgId: "ZackMans" })
+```
+
 ### Album Message (Multiple Images)
 Send multiple images in a single album message:
 
